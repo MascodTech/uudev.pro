@@ -1,0 +1,312 @@
+    body {
+        min-width: 320px;
+        /* overflow: hidden; */
+    }
+    
+    header {
+        padding-top: 5%;
+        height: 110vh;
+        background: url('../jpg/bg_header.png') no-repeat 100% 100%;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: repeat-y;
+    }
+    
+    #beer {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
+    
+    #beer::before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        display: flex;
+        margin-right: auto;
+        background: #cdb378;
+        align-self: center;
+    }
+    
+    #beer::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        display: flex;
+        margin-left: auto;
+        background: #cdb378;
+        align-self: center;
+    }
+    
+    .logo {
+        display: block;
+        margin: auto;
+        width: 20vh;
+        height: 21vh;
+        background: url('../jpg/Logo.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 5%;
+    }
+    
+    h1 {
+        font-family: 'cinzel-decorative-black';
+        font-size: 45px;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    h2 {
+        text-transform: uppercase;
+        font-family: 'cinzel-decorative';
+        font-size: 30px;
+        color: white;
+    }
+    
+    h3 {
+        text-transform: uppercase;
+        font-family: 'cinzel-decorative';
+        font-size: 39px;
+        color: white;
+    }
+    
+    @media(max-width:500px) {
+        h1 {
+            font-family: 'cinzel-decorative-black';
+            font-size: 30px;
+            color: white;
+            text-transform: uppercase;
+        }
+        h2 {
+            text-transform: uppercase;
+            font-family: 'cinzel-decorative';
+            font-size: 15px;
+            color: white;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-family: 'cinzel-decorative';
+            font-size: 25px;
+            color: white;
+        }
+    }
+    
+    p {
+        font-family: 'Amiriitalic';
+        font-size: 25px;
+        color: white;
+    }
+    
+    header .Schroll {
+        animation: Schroll 0.5s infinite alternate;
+        position: absolute;
+        bottom: 20vh;
+        right: calc(50% - 77.5px);
+        font-size: 20px;
+        z-index: 100;
+    }
+    
+    @keyframes Schroll {
+        from {
+            bottom: 13vh;
+        }
+        to {
+            bottom: 10vh;
+        }
+    }
+    
+    .Quality {
+        /* overflow: hidden; */
+        box-shadow: 0 0 200px black;
+    }
+    
+    #boutle {
+        position: absolute;
+        right: 10%;
+        top: -75%;
+        z-index: 10;
+    }
+    
+    @media(max-width:1200px) {
+        #boutle {
+            position: absolute;
+            right: 0;
+            top: 100%;
+        }
+    }
+    
+    @media(max-width:992px) {
+        #boutle {
+            position: absolute;
+            right: 0;
+            top: 100%;
+        }
+    }
+    
+    @media(max-width:992px) {
+        #boutle {
+            position: absolute;
+            height: 80vh;
+            right: 0;
+            top: 100%;
+        }
+    }
+    
+    #photo {
+        height: 110%;
+        width: 30%;
+        position: absolute;
+        right: 0;
+        top: -10%;
+    }
+    
+    @media(max-width:1200px) {
+        #photo {
+            display: inline-block;
+            position: static;
+            width: 40%;
+            height: 40%;
+            margin-left: auto;
+        }
+    }
+    
+    @media(max-width:992px) {
+        #photo {
+            display: inline-block;
+            position: static;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    #logo2 {
+        overflow: hidden;
+        position: absolute;
+        width: 40%;
+        right: 5%;
+        top: 0%;
+    }
+    
+    .knopka {
+        width: 200px;
+        height: 50px;
+        background: #1a190e;
+        border: 2px solid #404429;
+        color: white;
+        border-radius: 3px;
+        text-decoration: none;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    .knopka:hover {
+        width: 200px;
+        height: 50px;
+        background: #302d15;
+        border: 2px solid #5d6d06;
+        color: white;
+        border-radius: 3px;
+        text-decoration: none;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    #photo2 {
+        height: 110vh;
+        background: url(../jpg/Photo2.png) 100% 100% no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-position-y: inherit;
+        background-size: cover;
+    }
+    
+    #photo3 {
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: -30%;
+    }
+    
+    @media(max-width:1200px) {
+        #photo3 {
+            width: 100%;
+            display: block;
+            position: relative;
+            height: 100%;
+        }
+    }
+    
+    @media(max-width:992px) {
+        #photo3 {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    footer {
+        height: 300vh;
+        background: url('../jpg/bg_footer.png') 100% 100% no-repeat;
+        background-size: cover;
+        background-position-y: top;
+        background-position-x: center;
+        background-attachment: scroll;
+        padding-top: 30%;
+    }
+    
+    @media(max-width:1200px) {
+        footer {
+            height: 300vh;
+            background: url('../jpg/bg_footer.png') 100% 100% no-repeat;
+            background-size: cover;
+            background-position-y: top;
+            background-position-x: center;
+            background-attachment: scroll;
+            padding-top: 5%;
+            margin-top: 10px;
+        }
+    }
+    
+    .col {
+        padding-left: 10%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+    
+    @media( max-width:400px) {
+        * {
+            padding-left: 0%;
+            padding-right: 0;
+            padding-top: 4%;
+            padding-bottom: 4%;
+        }
+    }
+    
+    #Schroltop {
+        position: fixed;
+        right: 0;
+        margin: 20px;
+        height: 100%;
+        visibility: hidden;
+        color: transparent;
+    }
+    
+    footer:hover #Schroltop {
+        transition: 1000ms;
+        position: fixed;
+        height: 100%;
+        right: 0;
+        top: 0%;
+        font-size: 20px;
+        margin: 20px;
+        visibility: visible;
+        color: white;
+    }

@@ -1,0 +1,498 @@
+body {
+    min-width: 320px;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('../img/header_background.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* @media (max-width: 470px) {
+        header {
+            width: 100%;
+            height: 400px;
+            background: url('../img/header_background.png') no-repeat;
+            background-size: 120%;
+        }
+    } */
+
+.logotext {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600
+}
+
+.logotext:hover {
+    transition: 500ms;
+    color: #fd634e;
+    text-shadow: 0 0 30px #a2ca28;
+}
+
+.logotext::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 38px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #a2ca28;
+}
+
+.logotext:hover::after {
+    transition: 500ms;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #a2ca28;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-brand {
+    overflow: hidden;
+    height: 45px;
+}
+
+a {
+    font: 13px 'ANRMed';
+    color: white;
+}
+
+.aaaaaaaaaa a:hover {
+    transition: 500ms;
+    color: #fd634e;
+    text-decoration: none;
+    text-shadow: 0 0 2rem #fd634e;
+}
+
+p {
+    font: 13px 'PN';
+    font-weight: normal;
+    color: white;
+}
+
+h4 {
+    font: 24px 'PNbold';
+    color: white;
+    margin-top: 8px;
+}
+
+h1,
+h2,
+h3,
+{
+    font: 24px 'ANRMed';
+}
+
+h2 {
+    font: 24px 'ANRMed';
+    color: #a2ca28;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #fd634e;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 575px) {
+    .navbar-nav {
+        max-width: 150px;
+        text-shadow: 0 0 3em black;
+        background: #00000086;
+        border-radius: 10px;
+    }
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:hover {
+    transition: 200ms;
+    color: #d6e6a9;
+    text-shadow: 0 0 1em black;
+}
+
+.nav-link:hover::after {
+    transition: 200ms;
+    content: '';
+    display: block;
+    position: absolute;
+    max-width: 120px;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    background: #a2ca28;
+}
+
+.slogan h1 {
+    font: 40px 'ANRMed';
+    font-weight: 500;
+}
+
+.slogan h1 {
+    font: 40px 'ANRMed';
+    font-weight: 500;
+    margin: 0;
+}
+
+.slogan h2 {
+    font: 15px 'ANRMed';
+    font-weight: 500;
+    margin-right: 60px;
+}
+
+.slogan h1 .red {
+    color: red;
+}
+
+.slogan h2 .green {
+    color: green;
+}
+
+.slogan {
+    position: absolute;
+    bottom: 10%;
+    left: 9%;
+}
+
+@media (max-width: 470px) {
+    .slogan h1 {
+        font: 25px 'ANRMed';
+        font-weight: 500;
+    }
+}
+
+.krivushka {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    background: #fd624e69;
+    bottom: 0;
+    clip-path: polygon(0 85%, 100% 37%, 100% 100%, 0% 100%);
+}
+
+.sfirst {
+    padding-top: 110px;
+    background: #a2ca28;
+}
+
+.fitness {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 55px;
+}
+
+.drop {
+    width: 15px;
+    height: 23px;
+    margin: auto;
+    margin-bottom: 27px;
+}
+
+.iconsfirst {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.iconsfirstcould {
+    width: 69px;
+    height: 55px;
+}
+
+.pincard {
+    color: #656e74;
+    font: 14px 'PNbold';
+}
+
+.card-body a {
+    color: #a2ca28;
+    font: 14px 'PNbold';
+}
+
+.card-body a:hover {
+    color: #a2ca28;
+    font: 14px 'PNbold';
+    text-decoration: underline;
+}
+
+.card-img {
+    background: url('../img/fitness.png') no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    background-position: center;
+    text-align: center;
+}
+
+.card-img-yourbody {
+    background: url('../img/yourbody.png') no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    background-position: center;
+    text-align: center;
+}
+
+.card {
+    border-radius: 0;
+    border: none;
+}
+
+.card-body {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+@media(max-width:1049px) {
+    .card-body {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media(max-width:575px) {
+    .card-img,
+    .card-img-yourbody {
+        height: 233px;
+    }
+}
+
+.ActiveUsers {
+    width: 18px;
+    height: 30px;
+}
+
+.card-text span {
+    color: #fd634e;
+}
+
+.card-text span:hover,
+a:hover {
+    color: #a2ca28;
+}
+
+.sectionred {
+    position: relative;
+    background: #fd634e;
+    box-shadow: 0 50px 50px #00000042;
+    z-index: 2;
+}
+
+section {
+    position: relative;
+}
+
+.card-img-summer-of-fun {
+    height: 400px;
+    background: url('../img/summer-of-fun.png') no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    text-align: center;
+    padding: 60px;
+}
+
+@media(max-width:975px) {
+    .card-img-summer-of-fun {
+        height: 400px;
+        background: url('../img/summer-of-fun.png') no-repeat;
+        background-position-y: 0%;
+        background-position-x: center;
+    }
+}
+
+.card-img-lifestyle {
+    height: 400px;
+    background: url('../img/lifestyle.png') no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    background-position: center;
+}
+
+.sumersumer {
+    min-height: 300px;
+    background: #a2ca28;
+    /* box-shadow: 0px 0 300px #00000081; */
+}
+
+.card:hover {
+    transition: 500ms;
+    transform: scale(1.1);
+    box-shadow: 0px 0 300px #00000081;
+    z-index: 3000;
+}
+
+.mango {
+    height: 400px;
+    background: url('../img/mango.png') no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    background-position: center;
+}
+
+.vinograd {
+    height: 400px;
+    background: url('../img/uzum-_-.png') no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    background-position: center;
+}
+
+
+/* .bgfooter {
+    height: 1087px;
+    background: url('../img/bg_footer.png')no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background: size min wuth 500px;
+} */
+
+.bgfooter::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 60%;
+    background: #0d1119;
+    bottom: 0;
+    clip-path: polygon(50% 90%, 100% 80%, 100% 100%, 0 100%, 0 80%);
+}
+
+footer div .krivushka {
+    width: 100%;
+    height: 6%;
+    position: absolute;
+    background: #fd634e;
+    clip-path: polygon(0 0%, 0% 100%, 100% 100%);
+    z-index: 1;
+    box-shadow: 0 0 50px black
+}
+
+.footer {
+    height: 770px;
+    background: #0d1119;
+    padding-top: 70px;
+}
+
+.footer h5 {
+    color: white;
+    font: 16px 'pn';
+    font-weight: 500;
+}
+
+.footer p {
+    color: #8297a7;
+    font: 14px 'pn';
+    font-weight: 500;
+}
+
+.facebook,
+.twit,
+.youtube,
+.in {
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+}
+
+.facebook a,
+.twit a,
+.youtube a,
+.in a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.facebook {
+    background: #2e3192;
+}
+
+.facebook:hover {
+    background: #3d3f92;
+    color: white;
+    transform: scale(1.1);
+}
+
+.twit {
+    background: #00aeef;
+}
+
+.twit:hover {
+    background: #67cdf1;
+    color: white;
+    transform: scale(1.1);
+}
+
+.youtube {
+    background: #ed3123;
+}
+
+.youtube:hover {
+    background: #f5564b;
+    color: white;
+    transform: scale(1.1);
+}
+
+.in {
+    background: #171a8f;
+}
+
+.in:hover {
+    background: #313399;
+    color: white;
+    transform: scale(1.1);
+}
+
+.input-group-prepend,
+.input-group-text {
+    background: #f5564b;
+}
+
+.form-check-label {
+    color: white;
+}
+
+.knopochka {
+    width: 203px;
+    height: 50px;
+    background: #a2ca28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer input {
+    height: 50px;
+}
+
+.fa-user-circle-o,
+.fa-id-card {
+    position: absolute;
+    right: 10px;
+    color: #a2ca28;
+}

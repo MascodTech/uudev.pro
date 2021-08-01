@@ -1,0 +1,20 @@
+@font-face{
+    font-family: 'ANRDemi';
+    src: url('../Font/AvenirNextRoundedStd-Demi.ttf');
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'ANRMed';
+    src: url('../Font/AvenirNextRoundedStd-Med.ttf');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'PN';
+    src: url('../Font/ProximaNova-Regular.ttf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'PNbold';
+    src: url('../Font/ProximaNova-Semibold.ttf');
+    font-weight: 600;
+}
